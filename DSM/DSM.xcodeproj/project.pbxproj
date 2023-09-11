@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CCDBCD1C07986DEA1CE0F79 /* Pods_DSM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88154D76BBF44E011215FD3D /* Pods_DSM.framework */; };
+		3B0FD139D00AD35A9C64799B /* Pods_DSM_DSMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257B8D21C56A20D39284AC8A /* Pods_DSM_DSMUITests.framework */; };
 		51F1B5C72AABF54A00896376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5C62AABF54A00896376 /* AppDelegate.swift */; };
 		51F1B5C92AABF54A00896376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5C82AABF54A00896376 /* SceneDelegate.swift */; };
 		51F1B5CB2AABF54A00896376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5CA2AABF54A00896376 /* ViewController.swift */; };
@@ -17,6 +19,7 @@
 		51F1B5E12AABF55200896376 /* DSMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5E02AABF55200896376 /* DSMTests.swift */; };
 		51F1B5EB2AABF55200896376 /* DSMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5EA2AABF55200896376 /* DSMUITests.swift */; };
 		51F1B5ED2AABF55200896376 /* DSMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5EC2AABF55200896376 /* DSMUITestsLaunchTests.swift */; };
+		9228CFFD0089EF904C446955 /* Pods_DSMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA6E86A3772900D467003CF /* Pods_DSMTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115C0DCBC79BC4996F599361 /* Pods-DSM-DSMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSM-DSMUITests.debug.xcconfig"; path = "Target Support Files/Pods-DSM-DSMUITests/Pods-DSM-DSMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		257B8D21C56A20D39284AC8A /* Pods_DSM_DSMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSM_DSMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		312964453835E18B3AFC0E1D /* Pods-DSM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSM.release.xcconfig"; path = "Target Support Files/Pods-DSM/Pods-DSM.release.xcconfig"; sourceTree = "<group>"; };
 		51F1B5C32AABF54A00896376 /* DSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F1B5C62AABF54A00896376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51F1B5C82AABF54A00896376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		51F1B5E62AABF55200896376 /* DSMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F1B5EA2AABF55200896376 /* DSMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSMUITests.swift; sourceTree = "<group>"; };
 		51F1B5EC2AABF55200896376 /* DSMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51F4C22FF1BCC73ABD05631F /* Pods-DSM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSM.debug.xcconfig"; path = "Target Support Files/Pods-DSM/Pods-DSM.debug.xcconfig"; sourceTree = "<group>"; };
+		6AD72A855AB098BDBB004457 /* Pods-DSM-DSMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSM-DSMUITests.release.xcconfig"; path = "Target Support Files/Pods-DSM-DSMUITests/Pods-DSM-DSMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		88154D76BBF44E011215FD3D /* Pods_DSM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6CAEA8EFC0D8BAF46580E2 /* Pods-DSMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSMTests.release.xcconfig"; path = "Target Support Files/Pods-DSMTests/Pods-DSMTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBA6E86A3772900D467003CF /* Pods_DSMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F836B1285A9ED0CCC6B3498E /* Pods-DSMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSMTests.debug.xcconfig"; path = "Target Support Files/Pods-DSMTests/Pods-DSMTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCDBCD1C07986DEA1CE0F79 /* Pods_DSM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9228CFFD0089EF904C446955 /* Pods_DSMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0FD139D00AD35A9C64799B /* Pods_DSM_DSMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				51F1B5DF2AABF55200896376 /* DSMTests */,
 				51F1B5E92AABF55200896376 /* DSMUITests */,
 				51F1B5C42AABF54A00896376 /* Products */,
+				53E2BCBB2D3049D6A4A87764 /* Pods */,
+				832FA8E92C6086F4A58195EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,30 @@
 			path = DSMUITests;
 			sourceTree = "<group>";
 		};
+		53E2BCBB2D3049D6A4A87764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51F4C22FF1BCC73ABD05631F /* Pods-DSM.debug.xcconfig */,
+				312964453835E18B3AFC0E1D /* Pods-DSM.release.xcconfig */,
+				115C0DCBC79BC4996F599361 /* Pods-DSM-DSMUITests.debug.xcconfig */,
+				6AD72A855AB098BDBB004457 /* Pods-DSM-DSMUITests.release.xcconfig */,
+				F836B1285A9ED0CCC6B3498E /* Pods-DSMTests.debug.xcconfig */,
+				8A6CAEA8EFC0D8BAF46580E2 /* Pods-DSMTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		832FA8E92C6086F4A58195EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88154D76BBF44E011215FD3D /* Pods_DSM.framework */,
+				257B8D21C56A20D39284AC8A /* Pods_DSM_DSMUITests.framework */,
+				EBA6E86A3772900D467003CF /* Pods_DSMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F1B5F02AABF55200896376 /* Build configuration list for PBXNativeTarget "DSM" */;
 			buildPhases = (
+				B5400A476DDF3AB1B2C241E6 /* [CP] Check Pods Manifest.lock */,
 				51F1B5BF2AABF54A00896376 /* Sources */,
 				51F1B5C02AABF54A00896376 /* Frameworks */,
 				51F1B5C12AABF54A00896376 /* Resources */,
+				EDEA66B44B40D83C22E55EF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F1B5F32AABF55200896376 /* Build configuration list for PBXNativeTarget "DSMTests" */;
 			buildPhases = (
+				43861CFD46E6F4ED368EB53D /* [CP] Check Pods Manifest.lock */,
 				51F1B5D82AABF55200896376 /* Sources */,
 				51F1B5D92AABF55200896376 /* Frameworks */,
 				51F1B5DA2AABF55200896376 /* Resources */,
@@ -172,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F1B5F62AABF55200896376 /* Build configuration list for PBXNativeTarget "DSMUITests" */;
 			buildPhases = (
+				D5B6837384F37C455A26C16C /* [CP] Check Pods Manifest.lock */,
 				51F1B5E22AABF55200896376 /* Sources */,
 				51F1B5E32AABF55200896376 /* Frameworks */,
 				51F1B5E42AABF55200896376 /* Resources */,
+				8CDBB26AC57BD1E49B88CD2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +301,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43861CFD46E6F4ED368EB53D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DSMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CDBB26AC57BD1E49B88CD2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSM-DSMUITests/Pods-DSM-DSMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSM-DSMUITests/Pods-DSM-DSMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSM-DSMUITests/Pods-DSM-DSMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5400A476DDF3AB1B2C241E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DSM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B6837384F37C455A26C16C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DSM-DSMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDEA66B44B40D83C22E55EF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSM/Pods-DSM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSM/Pods-DSM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSM/Pods-DSM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51F1B5BF2AABF54A00896376 /* Sources */ = {
@@ -436,6 +585,7 @@
 		};
 		51F1B5F12AABF55200896376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F4C22FF1BCC73ABD05631F /* Pods-DSM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +614,7 @@
 		};
 		51F1B5F22AABF55200896376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 312964453835E18B3AFC0E1D /* Pods-DSM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +643,7 @@
 		};
 		51F1B5F42AABF55200896376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F836B1285A9ED0CCC6B3498E /* Pods-DSMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +663,7 @@
 		};
 		51F1B5F52AABF55200896376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6CAEA8EFC0D8BAF46580E2 /* Pods-DSMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +683,7 @@
 		};
 		51F1B5F72AABF55200896376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115C0DCBC79BC4996F599361 /* Pods-DSM-DSMUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -547,6 +701,7 @@
 		};
 		51F1B5F82AABF55200896376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD72A855AB098BDBB004457 /* Pods-DSM-DSMUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
