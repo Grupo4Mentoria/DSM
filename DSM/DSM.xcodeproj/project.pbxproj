@@ -20,6 +20,8 @@
 		51F1B5EB2AABF55200896376 /* DSMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5EA2AABF55200896376 /* DSMUITests.swift */; };
 		51F1B5ED2AABF55200896376 /* DSMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5EC2AABF55200896376 /* DSMUITestsLaunchTests.swift */; };
 		9228CFFD0089EF904C446955 /* Pods_DSMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA6E86A3772900D467003CF /* Pods_DSMTests.framework */; };
+		B0E160492AB12ADA00F95313 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */; };
+		B0E1604B2AB12C2500F95313 /* ThemeComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		6AD72A855AB098BDBB004457 /* Pods-DSM-DSMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSM-DSMUITests.release.xcconfig"; path = "Target Support Files/Pods-DSM-DSMUITests/Pods-DSM-DSMUITests.release.xcconfig"; sourceTree = "<group>"; };
 		88154D76BBF44E011215FD3D /* Pods_DSM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6CAEA8EFC0D8BAF46580E2 /* Pods-DSMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSMTests.release.xcconfig"; path = "Target Support Files/Pods-DSMTests/Pods-DSMTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
+		B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentViewModel.swift; sourceTree = "<group>"; };
 		EBA6E86A3772900D467003CF /* Pods_DSMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F836B1285A9ED0CCC6B3498E /* Pods-DSMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSMTests.debug.xcconfig"; path = "Target Support Files/Pods-DSMTests/Pods-DSMTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,7 @@
 		51F1B5BA2AABF54A00896376 = {
 			isa = PBXGroup;
 			children = (
+				B07334792AAFC737006A0015 /* Source */,
 				51F1B5C52AABF54A00896376 /* DSM */,
 				51F1B5DF2AABF55200896376 /* DSMTests */,
 				51F1B5E92AABF55200896376 /* DSMUITests */,
@@ -157,7 +162,6 @@
 				F836B1285A9ED0CCC6B3498E /* Pods-DSMTests.debug.xcconfig */,
 				8A6CAEA8EFC0D8BAF46580E2 /* Pods-DSMTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -169,6 +173,39 @@
 				EBA6E86A3772900D467003CF /* Pods_DSMTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B07334792AAFC737006A0015 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B073347A2AAFC755006A0015 /* DSM */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B073347A2AAFC755006A0015 /* DSM */ = {
+			isa = PBXGroup;
+			children = (
+				B0E160472AB12A2600F95313 /* ViewModel */,
+				B0E1604C2AB12E6D00F95313 /* ThemeComponent */,
+			);
+			path = DSM;
+			sourceTree = "<group>";
+		};
+		B0E160472AB12A2600F95313 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */,
+				B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B0E1604C2AB12E6D00F95313 /* ThemeComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThemeComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +451,8 @@
 				51F1B5CB2AABF54A00896376 /* ViewController.swift in Sources */,
 				51F1B5C72AABF54A00896376 /* AppDelegate.swift in Sources */,
 				51F1B5C92AABF54A00896376 /* SceneDelegate.swift in Sources */,
+				B0E1604B2AB12C2500F95313 /* ThemeComponentViewModel.swift in Sources */,
+				B0E160492AB12ADA00F95313 /* ThemeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
