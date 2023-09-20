@@ -24,7 +24,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         DSMFactory.shared.getComponentsData {
             let viewController = ViewController()
             self.window?.rootViewController = viewController
-            self.window?.backgroundColor = .red
             self.window?.makeKeyAndVisible()
         }
     }

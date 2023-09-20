@@ -24,7 +24,7 @@ class DSMFactory: NSObject {
                 switch result {
                 case .success(let response):
                     self.themeViewModel.themeModels = response
-                    self.getThemeComponents(themeId: 2) {
+                    self.getThemeComponents(themeId: 1) {
                         completion()
                     }
                 case .failure(let failure):
