@@ -10,11 +10,7 @@ import SDKNetwork
 
 class ThemeComponentViewModel {
     
-    private var themeComponentModel: [ThemeComponentModel] = []
-    
-    init(themeComponentModel: [ThemeComponentModel]) {
-        self.themeComponentModel = themeComponentModel
-    }
+    var themeComponentModel: [ThemeComponentModel] = []
     
     func getComponentName(id: Int) -> String {
         guard let model = themeComponentModel.filter({$0.id == id}).first,

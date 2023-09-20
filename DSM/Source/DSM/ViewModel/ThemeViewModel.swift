@@ -9,22 +9,9 @@ import Foundation
 import SDKNetwork
 
 class ThemeViewModel {
-
-    private let themeProvider = ThemeProvider()
-    private var themeModels: [ThemeModel] = []
     
-    init() {
-        DispatchQueue.main.async {
-            self.themeProvider.getThemeList { result in
-                switch result {
-                case .success(let response):
-                    self.themeModels = response
-                case .failure(let failure):
-                    print(failure)
-                }
-            }
-        }
-    }
+    private let themeProvider = ThemeProvider()
+    var themeModels: [ThemeModel] = []
     
     func getThemeName(id : Int) -> String? {
         guard let model = themeModels.filter({$0.id == id}).first,
