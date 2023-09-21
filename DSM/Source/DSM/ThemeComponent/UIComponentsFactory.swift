@@ -27,4 +27,29 @@ struct UIComponentsFactory {
                                          size: CGFloat(viewModel.getComponentFontSize(name: component)))
         return button
     }
+    
+    func createTextField(component: String, placeholder: String) -> UITextField {
+        let viewModel = DSMFactory.shared.themeComponentViewModel
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        
+        textField.placeholder = placeholder
+        
+        textField.backgroundColor = UIColor(named: viewModel.getComponentBackgroundColor(name: component))
+        textField.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(name: component))
+        textField.font = UIFont(name: viewModel.getComponentFontName(name: component),
+                                size: CGFloat(viewModel.getComponentFontSize(name: component)))
+        
+        return textField
+    }
+    
+    func createView(component: String) -> UIView {
+        let viewModel = DSMFactory.shared.themeComponentViewModel
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(name: component))
+        
+        return view
+    }
 }

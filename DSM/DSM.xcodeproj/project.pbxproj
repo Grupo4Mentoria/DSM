@@ -22,6 +22,7 @@
 		B006555C2ABBA2D50018555A /* UIComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006555B2ABBA2D50018555A /* UIComponentsFactory.swift */; };
 		B006555F2ABBA6520018555A /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006555E2ABBA6520018555A /* ColorConverter.swift */; };
 		B00655612ABBA8B70018555A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00655602ABBA8B70018555A /* HomeView.swift */; };
+		B00655632ABCFC020018555A /* ThemeComponentEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00655622ABCFC020018555A /* ThemeComponentEnum.swift */; };
 		B0D770682ABA770C00CD92C9 /* DSMFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D770672ABA770C00CD92C9 /* DSMFactory.swift */; };
 		B0E160492AB12ADA00F95313 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */; };
 		B0E1604B2AB12C2500F95313 /* ThemeComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */; };
@@ -68,6 +69,7 @@
 		B006555B2ABBA2D50018555A /* UIComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsFactory.swift; sourceTree = "<group>"; };
 		B006555E2ABBA6520018555A /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
 		B00655602ABBA8B70018555A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B00655622ABCFC020018555A /* ThemeComponentEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentEnum.swift; sourceTree = "<group>"; };
 		B0D770672ABA770C00CD92C9 /* DSMFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSMFactory.swift; sourceTree = "<group>"; };
 		B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
 		B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentViewModel.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			children = (
 				B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */,
 				B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */,
+				B00655622ABCFC020018555A /* ThemeComponentEnum.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00655632ABCFC020018555A /* ThemeComponentEnum.swift in Sources */,
 				B006555C2ABBA2D50018555A /* UIComponentsFactory.swift in Sources */,
 				B006555F2ABBA6520018555A /* ColorConverter.swift in Sources */,
 				51F1B5D12AABF54A00896376 /* DSM.xcdatamodeld in Sources */,
