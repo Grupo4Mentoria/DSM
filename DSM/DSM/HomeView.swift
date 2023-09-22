@@ -18,8 +18,8 @@ class HomeView: UIView {
         return UIComponentsFactory.shared.createButton(component: ThemeComponentEnum.customButtomSecundary.rawValue, title: "Secondary Button")
     }()
     
-    lazy var customText: UITextField = {
-        return UIComponentsFactory.shared.createTextField(component: ThemeComponentEnum.customText.rawValue, placeholder: "Custom Text")
+    lazy var customText: UILabel = {
+        return UIComponentsFactory.shared.createLabel(component: ThemeComponentEnum.customText.rawValue, text: "Custom Text")
     }()
     
     lazy var customTextField: UITextField = {

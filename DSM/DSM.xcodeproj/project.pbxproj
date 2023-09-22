@@ -26,6 +26,7 @@
 		B0D770682ABA770C00CD92C9 /* DSMFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D770672ABA770C00CD92C9 /* DSMFactory.swift */; };
 		B0E160492AB12ADA00F95313 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */; };
 		B0E1604B2AB12C2500F95313 /* ThemeComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */; };
+		B0FE89052ABE494E00AD28FD /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FE89042ABE494E00AD28FD /* UITextField+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		B0D770672ABA770C00CD92C9 /* DSMFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSMFactory.swift; sourceTree = "<group>"; };
 		B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
 		B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentViewModel.swift; sourceTree = "<group>"; };
+		B0FE89042ABE494E00AD28FD /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		EBA6E86A3772900D467003CF /* Pods_DSMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F836B1285A9ED0CCC6B3498E /* Pods-DSMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSMTests.debug.xcconfig"; path = "Target Support Files/Pods-DSMTests/Pods-DSMTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,10 +204,10 @@
 		B073347A2AAFC755006A0015 /* DSM */ = {
 			isa = PBXGroup;
 			children = (
+				B0FE89032ABE492D00AD28FD /* Extensions */,
 				B006555D2ABBA5DE0018555A /* Utils */,
 				B0E160472AB12A2600F95313 /* ViewModel */,
-				B0E1604C2AB12E6D00F95313 /* ThemeComponent */,
-				B0D770672ABA770C00CD92C9 /* DSMFactory.swift */,
+				B0E1604C2AB12E6D00F95313 /* Factory */,
 			);
 			path = DSM;
 			sourceTree = "<group>";
@@ -220,12 +222,21 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		B0E1604C2AB12E6D00F95313 /* ThemeComponent */ = {
+		B0E1604C2AB12E6D00F95313 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				B0D770672ABA770C00CD92C9 /* DSMFactory.swift */,
 				B006555B2ABBA2D50018555A /* UIComponentsFactory.swift */,
 			);
-			path = ThemeComponent;
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B0FE89032ABE492D00AD28FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0FE89042ABE494E00AD28FD /* UITextField+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +480,7 @@
 				B00655632ABCFC020018555A /* ThemeComponentEnum.swift in Sources */,
 				B006555C2ABBA2D50018555A /* UIComponentsFactory.swift in Sources */,
 				B006555F2ABBA6520018555A /* ColorConverter.swift in Sources */,
+				B0FE89052ABE494E00AD28FD /* UITextField+.swift in Sources */,
 				51F1B5D12AABF54A00896376 /* DSM.xcdatamodeld in Sources */,
 				B00655612ABBA8B70018555A /* HomeView.swift in Sources */,
 				51F1B5CB2AABF54A00896376 /* ViewController.swift in Sources */,

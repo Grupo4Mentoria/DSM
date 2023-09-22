@@ -25,6 +25,8 @@ struct UIComponentsFactory {
         button.setTitleColor(UIColor(named: viewModel.getComponentForegroundColor(name: component)), for: .normal)
         button.titleLabel?.font = UIFont(name: viewModel.getComponentFontName(name: component),
                                          size: CGFloat(viewModel.getComponentFontSize(name: component)))
+        button.layer.cornerRadius = 16
+        
         return button
     }
     
@@ -35,12 +37,31 @@ struct UIComponentsFactory {
         
         textField.placeholder = placeholder
         
-        textField.backgroundColor = UIColor(named: viewModel.getComponentBackgroundColor(name: component))
+        textField.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(name: component))
         textField.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(name: component))
         textField.font = UIFont(name: viewModel.getComponentFontName(name: component),
                                 size: CGFloat(viewModel.getComponentFontSize(name: component)))
         
+        textField.setLeftPaddingPoints(15)
+        
+        textField.layer.cornerRadius = 8
+        
         return textField
+    }
+    
+    func createLabel(component: String, text: String) -> UILabel {
+        let viewModel = DSMFactory.shared.themeComponentViewModel
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        label.text = text
+        
+        label.backgroundColor = UIColor(named: viewModel.getComponentBackgroundColor(name: component))
+        label.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(name: component))
+        label.font = UIFont(name: viewModel.getComponentFontName(name: component),
+                                size: CGFloat(viewModel.getComponentFontSize(name: component)))
+        
+        return label
     }
     
     func createView(component: String) -> UIView {
