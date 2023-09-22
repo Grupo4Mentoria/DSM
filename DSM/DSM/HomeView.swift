@@ -57,7 +57,7 @@ class HomeView: UIView {
         NSLayoutConstraint.activate([
             primaryButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             primaryButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
-            primaryButton.widthAnchor.constraint(equalToConstant: 200),
+            primaryButton.widthAnchor.constraint(equalToConstant: 250),
             primaryButton.heightAnchor.constraint(equalToConstant: 50),
             
             secondaryButton.leadingAnchor.constraint(equalTo: primaryButton.leadingAnchor),
