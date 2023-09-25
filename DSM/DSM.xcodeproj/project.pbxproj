@@ -190,6 +190,7 @@
 		B006555D2ABBA5DE0018555A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B0A09EE12AC1A4B700663132 /* DefaultLayoutParams.json */,
 				B006555E2ABBA6520018555A /* ColorConverter.swift */,
 			);
 			path = Utils;
@@ -210,7 +211,6 @@
 				B006555D2ABBA5DE0018555A /* Utils */,
 				B0E160472AB12A2600F95313 /* ViewModel */,
 				B0E1604C2AB12E6D00F95313 /* Factory */,
-				B0A09EE12AC1A4B700663132 /* DefaultLayoutParams.json */,
 			);
 			path = DSM;
 			sourceTree = "<group>";

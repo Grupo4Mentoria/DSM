@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
 
-        DSMFactory.shared.getComponentsData {
+        DSMFactory.shared.getThemesData {
             let viewController = ViewController()
             self.window?.rootViewController = viewController
             self.window?.makeKeyAndVisible()

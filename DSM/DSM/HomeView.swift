@@ -10,28 +10,30 @@ import UIKit
 
 class HomeView: UIView {
     
+    var themeId = 2
+    
     lazy var primaryButton: UIButton = {
-        return UIComponentsFactory.shared.createButton(component: ThemeComponentEnum.customButtomPrimary.rawValue, title: "Primary Button")
+        return UIComponentsFactory.shared.createButton(themeId: themeId, component: ThemeComponentEnum.customButtomPrimary.rawValue, title: "Primary Button")
     }()
     
     lazy var secondaryButton: UIButton = {
-        return UIComponentsFactory.shared.createButton(component: ThemeComponentEnum.customButtomSecundary.rawValue, title: "Secondary Button")
+        return UIComponentsFactory.shared.createButton(themeId: themeId, component: ThemeComponentEnum.customButtomSecundary.rawValue, title: "Secondary Button")
     }()
     
     lazy var customText: UILabel = {
-        return UIComponentsFactory.shared.createLabel(component: ThemeComponentEnum.customText.rawValue, text: "Custom Text")
+        return UIComponentsFactory.shared.createLabel(themeId: themeId, component: ThemeComponentEnum.customText.rawValue, text: "Custom Text")
     }()
     
     lazy var customTextField: UITextField = {
-        return UIComponentsFactory.shared.createTextField(component: ThemeComponentEnum.customTextField.rawValue, placeholder: "Custom TextField")
+        return UIComponentsFactory.shared.createTextField(themeId: themeId, component: ThemeComponentEnum.customTextField.rawValue, placeholder: "Custom TextField")
     }()
     
     lazy var customView: UIView = {
-        return UIComponentsFactory.shared.createView(component: ThemeComponentEnum.customView.rawValue)
+        return UIComponentsFactory.shared.createView(themeId: themeId, component: ThemeComponentEnum.customView.rawValue)
     }()
     
     lazy var customSubView: UIView = {
-        return UIComponentsFactory.shared.createView(component: ThemeComponentEnum.customSubView.rawValue)
+        return UIComponentsFactory.shared.createView(themeId: themeId, component: ThemeComponentEnum.customSubView.rawValue)
     }()
     
     override init(frame: CGRect) {

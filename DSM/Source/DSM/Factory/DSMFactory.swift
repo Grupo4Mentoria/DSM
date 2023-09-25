@@ -18,17 +18,27 @@ class DSMFactory: NSObject {
     let themeViewModel = ThemeViewModel()
     let themeComponentViewModel = ThemeComponentViewModel()
     
-    func getComponentsData(completion: @escaping(() -> Void)) {
+    func getThemesData(completion: @escaping(() -> Void)) {
         DispatchQueue.global(qos: .background).async {
             self.themeProvider.getThemeList { result in
                 switch result {
                 case .success(let response):
                     self.themeViewModel.themeModels = response
-                    self.getThemeComponents(themeId: 1) {
+                    self.getComponentsData {
                         completion()
                     }
                 case .failure(let failure):
                     print(failure)
+                }
+            }
+        }
+    }
+    
+    func getComponentsData(completion: @escaping(() -> Void)) {
+        self.themeViewModel.themeModels.forEach { themeModel in
+            if let id = themeModel.id {
+                self.getThemeComponents(themeId: id) {
+                    completion()
                 }
             }
         }
@@ -39,7 +49,7 @@ class DSMFactory: NSObject {
             self.themeComponentProvider.getThemeComponentList(themeId: themeId) { result in
                 switch result {
                 case .success(let response):
-                    self.themeComponentViewModel.themeComponentModel = response
+                    self.themeComponentViewModel.themeComponentData[themeId] = response
                     completion()
                 case .failure(let failure):
                     print(failure)
