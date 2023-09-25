@@ -23,6 +23,7 @@
 		B006555F2ABBA6520018555A /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006555E2ABBA6520018555A /* ColorConverter.swift */; };
 		B00655612ABBA8B70018555A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00655602ABBA8B70018555A /* HomeView.swift */; };
 		B00655632ABCFC020018555A /* ThemeComponentEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00655622ABCFC020018555A /* ThemeComponentEnum.swift */; };
+		B0A09EE22AC1A4B700663132 /* DefaultLayoutParams.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A09EE12AC1A4B700663132 /* DefaultLayoutParams.json */; };
 		B0D770682ABA770C00CD92C9 /* DSMFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D770672ABA770C00CD92C9 /* DSMFactory.swift */; };
 		B0E160492AB12ADA00F95313 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */; };
 		B0E1604B2AB12C2500F95313 /* ThemeComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */; };
@@ -71,6 +72,7 @@
 		B006555E2ABBA6520018555A /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
 		B00655602ABBA8B70018555A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B00655622ABCFC020018555A /* ThemeComponentEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentEnum.swift; sourceTree = "<group>"; };
+		B0A09EE12AC1A4B700663132 /* DefaultLayoutParams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DefaultLayoutParams.json; sourceTree = "<group>"; };
 		B0D770672ABA770C00CD92C9 /* DSMFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSMFactory.swift; sourceTree = "<group>"; };
 		B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
 		B0E1604A2AB12C2500F95313 /* ThemeComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentViewModel.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				B006555D2ABBA5DE0018555A /* Utils */,
 				B0E160472AB12A2600F95313 /* ViewModel */,
 				B0E1604C2AB12E6D00F95313 /* Factory */,
+				B0A09EE12AC1A4B700663132 /* DefaultLayoutParams.json */,
 			);
 			path = DSM;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			files = (
 				51F1B5D62AABF55100896376 /* LaunchScreen.storyboard in Resources */,
 				51F1B5D32AABF55100896376 /* Assets.xcassets in Resources */,
+				B0A09EE22AC1A4B700663132 /* DefaultLayoutParams.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -640,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
