@@ -13,7 +13,10 @@ class HomeView: UIView {
     var themeId = 2
     
     lazy var primaryButton: UIButton = {
-        return UIComponentsFactory.shared.createButton(themeId: themeId, component: ThemeComponentEnum.customButtomPrimary.rawValue, title: "Primary Button")
+        let button = UIComponentsFactory.shared.createButton(themeId: themeId, component: ThemeComponentEnum.customButtomPrimary.rawValue, title: "Primary Button")
+        button.addTarget(self, action: #selector(primaryButtonAction), for: .touchUpInside)
+        return button
+
     }()
     
     lazy var secondaryButton: UIButton = {
@@ -87,5 +90,15 @@ class HomeView: UIView {
             customSubView.topAnchor.constraint(equalTo: customView.bottomAnchor, constant: 20),
             customSubView.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+    
+    @objc func primaryButtonAction(sender:UIButton!) {
+        themeId = themeId == 1 ? 2 : 1
+        UIComponentsFactory.shared.updateButtonLayout(primaryButton, themeId: themeId, component: ThemeComponentEnum.customButtomPrimary.rawValue)
+        UIComponentsFactory.shared.updateButtonLayout(secondaryButton, themeId: themeId, component: ThemeComponentEnum.customButtomSecundary.rawValue)
+        UIComponentsFactory.shared.updateLabelLayout(customText, themeId: themeId, component: ThemeComponentEnum.customText.rawValue)
+        UIComponentsFactory.shared.updateTextFieldLayout(customTextField, themeId: themeId, component: ThemeComponentEnum.customTextField.rawValue)
+        UIComponentsFactory.shared.updateViewLayout(customView, themeId: themeId, component: ThemeComponentEnum.customView.rawValue)
+        UIComponentsFactory.shared.updateViewLayout(customSubView, themeId: themeId, component: ThemeComponentEnum.customSubView.rawValue)
     }
 }

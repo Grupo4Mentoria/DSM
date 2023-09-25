@@ -14,63 +14,81 @@ struct UIComponentsFactory {
     
     private let colorConverter = ColorConverter()
     
+    //MARK: - UIButton
     func createButton(themeId: Int, component: String, title: String) -> UIButton {
-        let viewModel = DSMFactory.shared.themeComponentViewModel
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         
         button.setTitle(title, for: .normal)
-        
-        button.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
-        button.setTitleColor(UIColor(named: viewModel.getComponentForegroundColor(themeId: themeId, name: component)), for: .normal)
-        button.titleLabel?.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
-                                         size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
         button.layer.cornerRadius = 16
+        
+        updateButtonLayout(button, themeId: themeId, component: component)
         
         return button
     }
     
-    func createTextField(themeId: Int, component: String, placeholder: String) -> UITextField {
+    func updateButtonLayout(_ button: UIButton, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
+        button.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
+        button.setTitleColor(UIColor(named: viewModel.getComponentForegroundColor(themeId: themeId, name: component)), for: .normal)
+        button.titleLabel?.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
+                                         size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
+    }
+    
+    //MARK: - UITextField
+    func createTextField(themeId: Int, component: String, placeholder: String) -> UITextField {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         
         textField.placeholder = placeholder
-        
-        textField.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
-        textField.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
-        textField.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
-                                size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
-        
+        textField.layer.cornerRadius = 8
         textField.setLeftPaddingPoints(15)
         
-        textField.layer.cornerRadius = 8
+        updateTextFieldLayout(textField, themeId: themeId, component: component)
         
         return textField
     }
     
-    func createLabel(themeId: Int, component: String, text: String) -> UILabel {
+    func updateTextFieldLayout(_ textField: UITextField, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
+        textField.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
+        textField.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
+        textField.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
+                                size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
+    }
+    
+    //MARK: - UILabel
+    func createLabel(themeId: Int, component: String, text: String) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         
         label.text = text
         
-        label.backgroundColor = UIColor(named: viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
-        label.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
-        label.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
-                                size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
+        updateLabelLayout(label, themeId: themeId, component: component)
         
         return label
     }
     
-    func createView(themeId: Int, component: String) -> UIView {
+    func updateLabelLayout(_ label:UILabel, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
+        label.backgroundColor = UIColor(named: viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
+        label.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
+        label.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
+                                size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
+    }
+    
+    //MARK: - UIView
+    func createView(themeId: Int, component: String) -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         
-        view.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
+        updateViewLayout(view, themeId: themeId, component: component)
         
         return view
+    }
+    
+    func updateViewLayout(_ view: UIView, themeId: Int, component: String) {
+        let viewModel = DSMFactory.shared.themeComponentViewModel
+        view.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
     }
 }
