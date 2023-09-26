@@ -10,7 +10,7 @@ import UIKit
 
 class HomeView: UIView {
     
-    var themeId = 2
+    var themeId = 1
     
     lazy var primaryButton: UIButton = {
         let button = UIComponentsFactory.shared.createButton(themeId: themeId, component: ThemeComponentEnum.customButtomPrimary.rawValue, title: "Primary Button")

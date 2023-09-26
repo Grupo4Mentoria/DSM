@@ -20,9 +20,9 @@
 		51F1B5ED2AABF55200896376 /* DSMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1B5EC2AABF55200896376 /* DSMUITestsLaunchTests.swift */; };
 		9228CFFD0089EF904C446955 /* Pods_DSMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA6E86A3772900D467003CF /* Pods_DSMTests.framework */; };
 		B006555C2ABBA2D50018555A /* UIComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006555B2ABBA2D50018555A /* UIComponentsFactory.swift */; };
-		B006555F2ABBA6520018555A /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006555E2ABBA6520018555A /* ColorConverter.swift */; };
 		B00655612ABBA8B70018555A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00655602ABBA8B70018555A /* HomeView.swift */; };
 		B00655632ABCFC020018555A /* ThemeComponentEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00655622ABCFC020018555A /* ThemeComponentEnum.swift */; };
+		B06C01482AC2EFC60078428C /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06C01472AC2EFC60078428C /* UIColor+.swift */; };
 		B0A09EE22AC1A4B700663132 /* DefaultLayoutParams.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A09EE12AC1A4B700663132 /* DefaultLayoutParams.json */; };
 		B0D770682ABA770C00CD92C9 /* DSMFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D770672ABA770C00CD92C9 /* DSMFactory.swift */; };
 		B0E160492AB12ADA00F95313 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */; };
@@ -69,9 +69,9 @@
 		88154D76BBF44E011215FD3D /* Pods_DSM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6CAEA8EFC0D8BAF46580E2 /* Pods-DSMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSMTests.release.xcconfig"; path = "Target Support Files/Pods-DSMTests/Pods-DSMTests.release.xcconfig"; sourceTree = "<group>"; };
 		B006555B2ABBA2D50018555A /* UIComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsFactory.swift; sourceTree = "<group>"; };
-		B006555E2ABBA6520018555A /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
 		B00655602ABBA8B70018555A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B00655622ABCFC020018555A /* ThemeComponentEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeComponentEnum.swift; sourceTree = "<group>"; };
+		B06C01472AC2EFC60078428C /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		B0A09EE12AC1A4B700663132 /* DefaultLayoutParams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DefaultLayoutParams.json; sourceTree = "<group>"; };
 		B0D770672ABA770C00CD92C9 /* DSMFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSMFactory.swift; sourceTree = "<group>"; };
 		B0E160482AB12ADA00F95313 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
@@ -191,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				B0A09EE12AC1A4B700663132 /* DefaultLayoutParams.json */,
-				B006555E2ABBA6520018555A /* ColorConverter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -238,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				B0FE89042ABE494E00AD28FD /* UITextField+.swift */,
+				B06C01472AC2EFC60078428C /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -483,7 +483,6 @@
 			files = (
 				B00655632ABCFC020018555A /* ThemeComponentEnum.swift in Sources */,
 				B006555C2ABBA2D50018555A /* UIComponentsFactory.swift in Sources */,
-				B006555F2ABBA6520018555A /* ColorConverter.swift in Sources */,
 				B0FE89052ABE494E00AD28FD /* UITextField+.swift in Sources */,
 				51F1B5D12AABF54A00896376 /* DSM.xcdatamodeld in Sources */,
 				B00655612ABBA8B70018555A /* HomeView.swift in Sources */,
@@ -491,6 +490,7 @@
 				51F1B5C72AABF54A00896376 /* AppDelegate.swift in Sources */,
 				51F1B5C92AABF54A00896376 /* SceneDelegate.swift in Sources */,
 				B0E1604B2AB12C2500F95313 /* ThemeComponentViewModel.swift in Sources */,
+				B06C01482AC2EFC60078428C /* UIColor+.swift in Sources */,
 				B0E160492AB12ADA00F95313 /* ThemeViewModel.swift in Sources */,
 				B0D770682ABA770C00CD92C9 /* DSMFactory.swift in Sources */,
 			);

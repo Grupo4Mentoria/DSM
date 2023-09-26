@@ -29,8 +29,8 @@ struct UIComponentsFactory {
     
     func updateButtonLayout(_ button: UIButton, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
-        button.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
-        button.setTitleColor(UIColor(named: viewModel.getComponentForegroundColor(themeId: themeId, name: component)), for: .normal)
+        button.backgroundColor = UIColor.getUIColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
+        button.setTitleColor(UIColor.getUIColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component)), for: .normal)
         button.titleLabel?.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
                                          size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
     }
@@ -51,8 +51,8 @@ struct UIComponentsFactory {
     
     func updateTextFieldLayout(_ textField: UITextField, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
-        textField.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
-        textField.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
+        textField.backgroundColor = UIColor.getUIColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
+        textField.textColor = UIColor.getUIColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
         textField.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
                                 size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
     }
@@ -71,8 +71,8 @@ struct UIComponentsFactory {
     
     func updateLabelLayout(_ label:UILabel, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
-        label.backgroundColor = UIColor(named: viewModel.getComponentBackgroundColor(themeId: themeId, name: component)) ?? .clear
-        label.textColor = colorConverter.hexToColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
+        label.backgroundColor = UIColor.getUIColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
+        label.textColor = UIColor.getUIColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
         label.font = UIFont(name: viewModel.getComponentFontName(themeId: themeId, name: component),
                                 size: CGFloat(viewModel.getComponentFontSize(themeId: themeId, name: component)))
     }
@@ -89,6 +89,6 @@ struct UIComponentsFactory {
     
     func updateViewLayout(_ view: UIView, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
-        view.backgroundColor = colorConverter.hexToColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
+        view.backgroundColor = UIColor.getUIColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
     }
 }
