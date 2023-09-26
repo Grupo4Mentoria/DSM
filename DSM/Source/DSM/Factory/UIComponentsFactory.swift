@@ -11,9 +11,7 @@ import UIKit
 struct UIComponentsFactory {
     
     static let shared = UIComponentsFactory()
-    
-    private let colorConverter = ColorConverter()
-    
+        
     //MARK: - UIButton
     func createButton(themeId: Int, component: String, title: String) -> UIButton {
         let button = UIButton()
