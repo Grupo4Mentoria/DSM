@@ -1,0 +1,22 @@
+PODS:
+  - SDKNetwork (1.0.0)
+
+DEPENDENCIES:
+  - SDKNetwork (from `https://github.com/Grupo4Mentoria/SDKNetwork.git`, branch `feature/pod`)
+
+EXTERNAL SOURCES:
+  SDKNetwork:
+    :branch: feature/pod
+    :git: https://github.com/Grupo4Mentoria/SDKNetwork.git
+
+CHECKOUT OPTIONS:
+  SDKNetwork:
+    :commit: d8f724bf3716ef3c0d5109f6edff3edeb9256004
+    :git: https://github.com/Grupo4Mentoria/SDKNetwork.git
+
+SPEC CHECKSUMS:
+  SDKNetwork: 0ac7fa64e88a18404d92e704c4454afe3bb1b353
+
+PODFILE CHECKSUM: 8b6a983bff8b6f06d0a40ac722962b0e15f08aa7
+
+COCOAPODS: 1.12.1

@@ -1,0 +1,6 @@
+framework module Pods_DSMTests {
+  umbrella header "Pods-DSMTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
