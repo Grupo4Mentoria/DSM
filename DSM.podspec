@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.authors          = { 'Grupo4' => 'grupo4mentoria@gmail.com' }
     spec.summary          = 'DSM.'
     spec.source           = { :git => 'https://github.com/Grupo4Mentoria/DSM.git', :tag => "#{spec.version}" }
-    spec.source_files     = 'Source/DSM/*'
+    spec.source_files     = 'DSM/*'
 end  
 
 
