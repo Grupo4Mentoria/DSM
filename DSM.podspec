@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
     spec.source_files     = 'Source/DSM/Factory/*'
     spec.source_files     = 'Source/DSM/Utils/*'
     spec.source_files     = 'Source/DSM/ViewModel/*'
+    spec.dependency       = pod 'SDKNetwork', :git => 'https://github.com/Grupo4Mentoria/SDKNetwork.git', :branch => 'feature/pod'
 end  
 
 
