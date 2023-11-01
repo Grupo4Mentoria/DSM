@@ -6,7 +6,7 @@ target 'DSM' do
   use_frameworks!
 
   # Pods for DSM
-pod 'SDKNetwork', :git => 'https://github.com/Grupo4Mentoria/SDKNetwork.git', :branch => 'feature/pod'
+  pod 'SDKNetwork', :git => 'https://github.com/Grupo4Mentoria/SDKNetwork.git', :branch => 'feature/pod'
 
   target 'DSMTests' do
     inherit! :search_paths
