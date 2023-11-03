@@ -6,12 +6,9 @@ Pod::Spec.new do |spec|
     spec.authors          = { 'Grupo4' => 'grupo4mentoria@gmail.com' }
     spec.summary          = 'DSM.'
     spec.source           = { :git => 'https://github.com/Grupo4Mentoria/DSM.git', :tag => "#{spec.version}" }
-    spec.source_files     = 'Source/DSM/Extensions/*'
-    spec.source_files     = 'Source/DSM/Factory/*'
-    spec.source_files     = 'Source/DSM/Utils/*'
-    spec.source_files     = 'Source/DSM/ViewModel/*'
+    spec.source_files     = 'Source/DSM/**/*'
     
-     spec.dependency 'SDKNetwork'
+    spec.dependency 'SDKNetwork'
 end  
 
 
