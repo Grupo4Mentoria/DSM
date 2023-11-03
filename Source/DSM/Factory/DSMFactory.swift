@@ -8,9 +8,9 @@
 import Foundation
 import SDKNetwork
 
-class DSMFactory: NSObject {
+public class DSMFactory: NSObject {
     
-    static let shared = DSMFactory()
+    public static let shared = DSMFactory()
     
     private let themeProvider = ThemeProvider()
     private let themeComponentProvider = ThemeComponentProvider()
@@ -18,7 +18,7 @@ class DSMFactory: NSObject {
     let themeViewModel = ThemeViewModel()
     let themeComponentViewModel = ThemeComponentViewModel()
     
-    func getThemesData(completion: @escaping(() -> Void)) {
+    public func getThemesData(completion: @escaping(() -> Void)) {
         DispatchQueue.global(qos: .background).async {
             self.themeProvider.getThemeList { result in
                 switch result {
@@ -34,7 +34,7 @@ class DSMFactory: NSObject {
         }
     }
     
-    func getComponentsData(completion: @escaping(() -> Void)) {
+    public func getComponentsData(completion: @escaping(() -> Void)) {
         self.themeViewModel.themeModels.forEach { themeModel in
             if let id = themeModel.id {
                 self.getThemeComponents(themeId: id) {

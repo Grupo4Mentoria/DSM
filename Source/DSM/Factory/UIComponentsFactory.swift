@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-struct UIComponentsFactory {
+public struct UIComponentsFactory {
     
     static let shared = UIComponentsFactory()
         
     //MARK: - UIButton
-    func createButton(themeId: Int, component: String, title: String) -> UIButton {
+    public func createButton(themeId: Int, component: String, title: String) -> UIButton {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         
@@ -25,7 +25,7 @@ struct UIComponentsFactory {
         return button
     }
     
-    func updateButtonLayout(_ button: UIButton, themeId: Int, component: String) {
+    public func updateButtonLayout(_ button: UIButton, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
         button.backgroundColor = UIColor.getUIColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
         button.setTitleColor(UIColor.getUIColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component)), for: .normal)
@@ -34,7 +34,7 @@ struct UIComponentsFactory {
     }
     
     //MARK: - UITextField
-    func createTextField(themeId: Int, component: String, placeholder: String) -> UITextField {
+    public func createTextField(themeId: Int, component: String, placeholder: String) -> UITextField {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         
@@ -47,7 +47,7 @@ struct UIComponentsFactory {
         return textField
     }
     
-    func updateTextFieldLayout(_ textField: UITextField, themeId: Int, component: String) {
+    public func updateTextFieldLayout(_ textField: UITextField, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
         textField.backgroundColor = UIColor.getUIColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
         textField.textColor = UIColor.getUIColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
@@ -56,7 +56,7 @@ struct UIComponentsFactory {
     }
     
     //MARK: - UILabel
-    func createLabel(themeId: Int, component: String, text: String) -> UILabel {
+    public func createLabel(themeId: Int, component: String, text: String) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -67,7 +67,7 @@ struct UIComponentsFactory {
         return label
     }
     
-    func updateLabelLayout(_ label:UILabel, themeId: Int, component: String) {
+    public func updateLabelLayout(_ label:UILabel, themeId: Int, component: String) {
         let viewModel = DSMFactory.shared.themeComponentViewModel
         label.backgroundColor = UIColor.getUIColor(viewModel.getComponentBackgroundColor(themeId: themeId, name: component))
         label.textColor = UIColor.getUIColor(viewModel.getComponentForegroundColor(themeId: themeId, name: component))
@@ -76,7 +76,7 @@ struct UIComponentsFactory {
     }
     
     //MARK: - UIView
-    func createView(themeId: Int, component: String) -> UIView {
+    public func createView(themeId: Int, component: String) -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         
