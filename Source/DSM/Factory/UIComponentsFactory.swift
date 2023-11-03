@@ -10,7 +10,7 @@ import UIKit
 
 public struct UIComponentsFactory {
     
-    static let shared = UIComponentsFactory()
+    public static let shared = UIComponentsFactory()
         
     //MARK: - UIButton
     public func createButton(themeId: Int, component: String, title: String) -> UIButton {
